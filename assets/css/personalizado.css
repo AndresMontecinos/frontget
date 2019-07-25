@@ -1,0 +1,334 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+/* BOTON SLIDER*/
+.btn-ttc {
+  background: rgb(0, 149, 248);
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+/* FIN NAVBAR SUPERIOR CELESTE*/
+
+/* NAVBAR SUPERIOR CELESTE*/
+.navbar-superior {
+  background: rgb(66, 172, 243);
+}
+.navbar-superior span,i {
+  color: rgb(255, 255, 255);
+}
+
+
+.navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar.navbar-expand-lg .navbar-nav .active .nav-link {
+    color: #39a4fc;
+    
+}
+
+body, html{ margin:0; padding:0;}
+.header{ border-top:1px solid white;background:white; color:#333; height:150px; width:100%; font-family: 'Lobster', cursive; text-align:center}
+.menu{ height:80px; width:100%; background:#333; color:white; text-align:center}
+.wrapper{ height:2000px; width:100%; padding-top:20px}
+
+.fixed{position:fixed; top:0}
+
+
+
+.letra-nav{
+	font-size: 70%;
+}
+/* FIN NAVBAR SUPERIOR CELESTE*/
+
+/*  CARDPANEL SLIDER BAR*/
+.well.well-trans {
+	background-color: rgba(255, 255, 255, 0.747);
+	min-height: 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+/* FIN CARDPANEL SLIDER BAR */
+
+
+ul.lead-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-bottom: 20px;
+	color: rgba(97, 93, 93, 0.979)
+}
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+ul.lead-list li span.fa {
+	margin: 5px 5px 0 0;
+	float: left;
+}
+.icon-success {
+	color: #7db53b;
+}
+
+strong {
+	font-weight: 700;
+	color: rgb(70, 65, 65)
+}
+
+ul.lead-list li {
+	margin: 0 0 20px 0;
+	line-height: 1.6em;
+	
+}
+
+
+
+
+
+
+/* ENTRADA DE ESCENA DE CARDPANEL*/
+.intro {
+animation: fadeIn 2s;
+/*animation: fadeInDown 2s;
+*/
+}
+.fadeInDown {
+	animation: fadeInDown 2s;
+	/*animation: fadeInDown 2s;
+	*/
+}
+
+
+@keyframes fadeIn{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* FIN ENTRADA DE ESCENA DE CARDPANEL*/
+
+
+/* Primer CardPanel*/
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+	box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+/* Fin Primer CardPanel*/
+
+
+
+/* -- CardPanel de Lenguajes -- */
+
+.cardes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 360px;
+  height: 300px;
+  background: #000;
+}
+.cardes .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cardes .image img {
+  transition: .5s;
+}
+.cardes:hover .image img {
+  opacity: .5;
+  transform: translateX(30%);/*100%*/
+}
+.cardes .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;/*100%*/
+  height: 100%;
+  background: #39a4fc;
+  transition: .5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.cardes:hover .details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.cardes .details .center {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cardes .details .center h1 {
+  margin: 0;
+  padding: 0;
+  color: #ff3636;
+  line-height: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.cardes .details .center h1 span {
+  font-size: 14px;
+  color: #262626;
+}
+.cardes .details .center p {
+  margin: 10px 0;
+  padding: 0;
+  color: #262626;
+}
+.cardes .details .center ul {
+  margin: 10px auto 0;
+  padding: 0;
+  display: table;
+}
+.cardes .details .center ul li {
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+.cardes .details .center ul li a {
+  display: block;
+  background: #262626;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transform: .5s;
+}
+.cardes .details .center ul li a:hover {
+  background: #ff3636;
+}
+
+/* -- FIN CardPanel de Lenguajes -- */
+
+
+
+
+
+
+/* ===========================
+--- Footer
+============================ */
+
+footer {
+	background-color: #dae9f8 fixed no-repeat 50% 50%;
+	background-size: cover;
+	color: rgb(219, 218, 218)
+}
+
+
+
+footer {
+	padding: 50px 0 0;
+	
+}
+
+footer .widget {
+	margin-bottom: 30px;
+}
+
+footer .widget h5 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+
+.sub-footer {
+	margin-top: 30px;
+    background-color: #f7f7f7;
+	border-top: 1px solid #ddd;
+	padding: 30px 0 10px;
+}
+
+.sub-footer a{
+	color: #444;
+}
+
+footer .sub-footer  p {
+	font-size: 14px;
+}
+
+
+.widget ul {
+	list-style: none;
+	padding-left:0;
+	
+}
+
+.subletra-footer{
+	font-size: 80%;
+	
+}
+/* -- icon var -- */
+
+#seccion1{
+
+	background-image: url('../img/footer.jpg');
+}
+
+	
+	
